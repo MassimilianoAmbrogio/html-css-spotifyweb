@@ -1,0 +1,99 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CONTAINER */
+#app {
+    height: 100vh;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+/* MAIN */
+#main-window {
+    flex-grow: 1;
+    display: flex;
+}
+
+/* Sidebar*/
+#sidebar {
+    flex-basis: 200px;
+}
+
+.col-right {
+    width: 250px;
+    height: 681px;
+    color: #fff;
+    background: #595454;
+}
+
+.sub-col{
+    width: 250px;
+    height: 60px;
+    color: #fff;
+    background: #4A4344;
+    margin-top: 600px;
+}
+
+/* CONTENT*/
+#content {
+    position: relative;
+    flex-grow: 1;
+    background: #000;
+    color: #fff;
+    height: 100%;
+}
+
+.top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: rgba(100, 50, 0, .5);
+    z-index: 1;
+}
+
+/* Menu canzoni  */
+#content .scrollable {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98%;
+    height: 70px;
+    background: #4A4344;
+    margin: 90px 12px;
+} 
+
+.menu {
+    list-style: none;
+    height: 200px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.menu .li-1,
+.menu .li-2,
+.menu .li-3,
+.menu .li-4,
+.menu .li-5 {
+    height: 100px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* FOOTER */
+#player {
+    width: 100%;
+    height: 70px;
+    color: #fff;
+    background: #5F5A59;
+}
