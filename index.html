@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MySpotify</title>
+    <title>My Spotify</title>
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <!-- Font -->
@@ -11,67 +11,79 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
+ 
 <body>
+    <!-- Inizo esercizio Spotify -->
 
-     <!-- Container -->
-     <div id="app">
-        <!-- main-content -->
+     <!-- Root -->
+     <div class="app">
+        <!-- Main-content -->
 
-        <main id="main-window">
+        <main class="main-window">
             <!-- Sidebar -->
 
             <!-- Menu spotify e sezioni -->
-            <aside id="sidebar">
-                <div class="col-right">
+            <aside class="sidebar">
+                <div class="sidebar-top">
                     Logo e nav
-                    <div class="sub-col">
-                        Account
-                    </div>
+                </div>
+                <div class="sidebar-bottom">
+                    Account
                 </div>
             </aside>
 
              <!-- Content -->
-            <div id="content">
-                <div class="top-bar">
-                   Top bare here
-                </div>
-            
-              <!-- Menu canzoni -->
+            <div class="content">
+                <!-- CTA -->
+                <div class="content-top-bar">Top bar here</div>
+
+              <!-- Album canzoni e scrollable -->
                 <div class="scrollable">
-                   <div>
-                      Menu
-                   </div>
-               
-                    <nav>
-                        <ul class="menu">
-                            <li class="li-1">
-                                Category title
-                            </li>
-                            <li class="li-2">
-                                Category title
-                            </li>
-                            <li class="li-3">
-                                Category title
-                            </li>
-                            <li class="li-4">
-                                Category title
-                            </li>
-                            <li class="li-5">
-                                Category title
-                            </li>
-                            <li>
-                
-                            </li>
-                        </ul>
-                    </nav>
+                    <nav class="content-menu">Menu</nav>
+
+                        <section class="content-category">
+                            <h2>Category title</h2>
+                            <ul class="album-list">
+                                <li class="album"></li>
+                                <li class="album"></li>
+                                <li class="album"></li>
+                                <li class="album"></li>
+                                <li class="album"></li>
+                                <li class="album"></li>
+                            </ul>
+                        </section>
+
+                        <section class="content-category">
+                            <h2>Category title</h2>
+                            <ul class="album-list">
+                                <li class="album"></li>
+                                <li class="album"></li>
+                            </ul>
+                        </section>
+
+                        <section class="content-category">
+                            <h2>Category title</h2>
+                            <ul class="album-list">
+                                <li class="album"></li>
+                                <li class="album"></li>
+                            </ul>
+                        </section>
                 </div>
             </div>
         </main>
       
-        <!-- Bottom Player -->
-        <footer id="player">
-            Player
+        <!-- App player -->
+        <footer class="player">
+            <!-- Album -->
+             <div class="player-album">Album</div>
+             
+            <!-- Controller -->
+             <div class="player-controller">Controller</div>
+
+            <!-- Audio -->
+            <div class="player-audio">Audio</div>
         </footer>
      </div>
+<!-- Fine esercizio Spotify -->
 </body>
 </html>

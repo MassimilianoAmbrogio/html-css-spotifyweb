@@ -1,4 +1,5 @@
 /* GENERAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,93 +8,115 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: #fff;
 }
 
-/* CONTAINER */
-#app {
+/* LAYOUT */
+.app {
     height: 100vh;
-    background: #000;
+    background: dodgerblue;
     display: flex;
     flex-direction: column;
 }
 
-/* MAIN */
-#main-window {
-    flex-grow: 1;
+/* MAIN WINDOW */
+.main-window {
     display: flex;
+    flex-grow: 1;
 }
 
-/* Sidebar*/
-#sidebar {
-    flex-basis: 200px;
+/* SIDEBAR */
+.sidebar {
+    flex-basis: 230px;
+    display: flex;
+    flex-direction: column;
 }
 
-.col-right {
-    width: 250px;
-    height: 681px;
-    color: #fff;
-    background: #595454;
+.sidebar-top {
+    flex-grow: 1;
+    background: #cccccc;
 }
 
-.sub-col{
-    width: 250px;
-    height: 60px;
-    color: #fff;
-    background: #4A4344;
-    margin-top: 600px;
+.sidebar-bottom {
+    height: 80px; /* debug */
+    background: #888;
 }
 
-/* CONTENT*/
-#content {
+/* CONTENT, TOP BAR, ALBUM E SCROLLABLE*/
+.content {
     position: relative;
     flex-grow: 1;
-    background: #000;
-    color: #fff;
-    height: 100%;
+    background: #444;
 }
 
-.top-bar {
+.content-top-bar {
     position: absolute;
     top: 0;
-    left: 0;
+    left:0;
     width: 100%;
-    height: 90px;
+    height: 90px; /* debug */;
     background: rgba(100, 50, 0, .5);
     z-index: 1;
 }
 
-/* Menu canzoni  */
-#content .scrollable {
+.content .scrollable {
     position: absolute;
     top: 0;
     left: 0;
-    width: 98%;
-    height: 70px;
-    background: #4A4344;
-    margin: 90px 12px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background: #000;
+    padding: 90px 15px 30px;
 } 
 
-.menu {
+.content-category {
+    /* height: 400px; */
+    margin-bottom: 30px;
+}
+
+.album-list {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    height: 200px;
-    width: 100%;
-    margin-top: 50px;
 }
 
-.menu .li-1,
-.menu .li-2,
-.menu .li-3,
-.menu .li-4,
-.menu .li-5 {
-    height: 100px;
-    width: 100%;
-    margin-top: 50px;
+.album-list .album {
+    flex-basis: calc(100% / 6 - 15px);
+    margin-right: 15px;
+    margin-bottom: 15px;
+    height: 300px; /* debug */
+    background: #ccc;
 }
 
-/* FOOTER */
-#player {
-    width: 100%;
-    height: 70px;
-    color: #fff;
-    background: #5F5A59;
+.content-menu {
+    height: 80px; /* debug */;
+    background: #222;
 }
+
+/* PLAYER */
+.player {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+}
+
+.player-album,
+.player-controller,
+.player-audio {
+    height: 80px; /* debug */
+    background: #666;
+}
+
+.player-album {
+    flex-basis: 230px;
+}
+
+.player-controller {
+    flex-basis: 40%;
+}
+
+.player-audio {
+    flex-basis: 230px;
+}
+
