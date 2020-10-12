@@ -14,7 +14,7 @@
  
 <body>
     <!-- Inizo esercizio Spotify -->
-
+   
      <!-- Root -->
      <div class="app">
         <!-- Main-content -->
@@ -37,31 +37,32 @@
                         <img src="./img-spotify/libreria.svg" alt="logo libreria"><a href="#">La tua libreria</a>
                     </div>    
                     <div>
-                        <span class="title">Playlist</span>
-                        <i class="fas fa-plus"></i><a class="sub-title" href="#">Crea Playlist</a>
+                        <p class="title">Playlist</p>
+                        <i class="fas fa-plus"><a href="#"></a></i>
+                        <a class="sub-title" href="#">Crea Playlist</a>
                     </div>
                 
                         <nav class="menu">
                             <li>
-                            <a href="#">Nome Playlist</a> 
+                              <a href="#">Nome Playlist</a> 
                             </li>
                             <li>
-                            <a href="#">Nome Playlist</a>
+                              <a href="#">Nome Playlist</a>
                             </li>
                             <li>
-                            <a href="#">Nome Playlist</a>
+                              <a href="#">Nome Playlist</a>
                             </li>
                             <li>
-                            <a href="#">Nome Playlist</a>
+                              <a href="#">Nome Playlist</a>
                             </li>
                             <li>
-                            <a href="#">Nome Playlist</a>
+                              <a href="#">Nome Playlist</a>
                             </li>
                             <li>
-                            <a href="#">Nome Playlist</a>
+                              <a href="#">Nome Playlist</a>
                             </li>
                             <li>
-                            <a href="#">Nome Playlist</a>
+                              <a href="#">Nome Playlist</a>
                             </li>
                         </nav>
                 </div>
@@ -106,37 +107,40 @@
                     </nav>
 
                         <section class="content-category-1">
-                            <h2>Recently played</h2>
+                             <!-- Java Script -->
+                            <script src="./js/action.js"></script>
+
+                              <h2>Recently played</h2>
                             <ul class="album-list-1">
                                 <li class="album"><img src="./img-spotify/metal_lifting.jpg" alt="Img Album 1">
                                     <h3>Heanvy Metal</h3>
-                                    <span class="sub-title-1">Subtitle</span>
+                                    <p class="sub-title-1">Subtitle</p>
                                 </li>
                                 <li class="album"><img src="./img-spotify/stranger.jpeg" alt="Img Album 2">
                                     <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
-                                    <span class="sub-title-2">Kyle Dixon & Michael Stein</span>
+                                    <p class="sub-title-2">Kyle Dixon & Michael Stein</p>
                                 </li>
                                 <li class="album"><img src="./img-spotify/aquietplace.jpeg" alt="Img Album 3">
                                     <h3>A quiet place</h3>
-                                    <span class="sub-title-3">Subtitle</span>
+                                    <p class="sub-title-3">Subtitle</p>
                                 </li>
                                 <li class="album"><img src="./img-spotify/split.jpeg" alt="Img Album 4">
                                     <h3>Split</h3>
-                                    <span class="sub-title-4">Subtitle</span>
+                                    <p class="sub-title-4">Subtitle</p>
                                 </li>
                                 <li class="album"><img src="./img-spotify/cure.jpeg" alt="Img Album 5">
                                     <h3>A cure for wellness</h3>
-                                    <span class="sub-title-5">Subtitle</span>
+                                    <p class="sub-title-5">Subtitle</p>
                                 </li>
                                 <li class="album"><img src="./img-spotify/sinister.jpeg" alt="Img Album 6">
                                     <h3>Sinister</h3>
-                                    <span class="sub-title-6">Subtitle</span>
+                                    <p class="sub-title-6">Subtitle</p>
                                 </li>
                             </ul>
                         </section>
 
                         <section class="content-category-2">
-                            <h2>Creato per Massimiliano Ambrogio</h2>
+                            <h2>Creato per Massimiliano</h2>
                             <p>Più ascolti, più accurati saranno i suggerimenti</p>
                             <ul class="album-list-2">
                                 <li class="album"><img src="./img-spotify/radar.jpeg" alt="Img Album 1">
@@ -167,13 +171,36 @@
         <!-- App player -->
         <footer class="player">
             <!-- Album -->
-             <div class="player-album">Album</div>
+             <div class="player-album">
+                <img src="./img-spotify/sinister.jpeg" alt="Img Album 6">
+                <h3>Sinister</h3>
+                <p>Brano</p>
+                <p class="text-2">Nome</p>
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+             </div>
              
             <!-- Controller -->
-             <div class="player-controller">Controller</div>
+             <div class="player-controller">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo-alt"></i>
+               <h6>0:25</h6>
+               <div class="line-1"></div>
+               <div class="line-2"></div>
+               <h6 class="num-2">4:35</h6>
+             </div>
 
             <!-- Audio -->
-             <div class="player-audio">Audio</div>
+             <div class="player-audio">
+                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-desktop"></i>
+                <i class="fas fa-volume-up"></i>
+               <div class="line-1"></div>
+               <div class="line-2"></div>
+             </div>
         </footer>
      </div>
 <!-- Fine esercizio Spotify -->
