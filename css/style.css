@@ -41,6 +41,7 @@ body {
     margin-top: 20px;
     width: 175px;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .logo-1 img {
@@ -108,6 +109,7 @@ body {
     background: #999999;
     width: 40px;
     height: 30px;
+    cursor: pointer;
 }
 
 .sidebar-top .sub-title  {
@@ -118,6 +120,12 @@ body {
     text-decoration: none;
     font-weight: 600;
     line-height: 2px;
+}
+
+.sidebar-top a:hover, 
+.sub-title:hover {
+    color: #fff;
+    transition: .1s;
 }
 
 .menu li {
@@ -131,6 +139,11 @@ body {
     color: #363636;
 }
 
+.menu li a:hover {
+    color: #fff;
+    transition: .1s;
+}
+
 .sidebar-bottom {
     height: 80px; /* debug */
     background: #000;
@@ -141,10 +154,21 @@ body {
     margin-left: 20px;
 }
 
+.fa-arrow-circle-down:hover {
+    color: #fff;
+    transition: .1s;
+    cursor: pointer;
+}
+
 .sidebar-bottom .download {
-    margin-left: 15px;
+    margin-left: 10px;
     color: #363636;
     text-decoration: none;
+}
+
+.sidebar-bottom .download:hover {
+    color: #fff;
+    transition: .1s;
 }
 
 .line {
@@ -159,6 +183,7 @@ body {
     margin-top: 10px;
     margin-left: 20px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .sidebar-bottom span {
@@ -166,6 +191,7 @@ body {
     margin-left: 10px;
     font-weight: 600;
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* CONTENT */
@@ -251,6 +277,16 @@ body {
     padding-left: 20px;
 }
 
+.content-menu li .section-1:hover, 
+.content-menu li .section-2:hover,
+.content-menu li .section-3:hover,
+.content-menu li .section-4:hover,
+.content-menu li .section-5:hover,
+.content-menu li .section-6:hover {
+    color: #fff;
+    transition: .1s;
+}
+
 /* CONTENT CATEGORY */
 .content-category-1, 
 .content-category-2, 
@@ -279,6 +315,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    cursor: pointer;
 }
 
 .album-list-1 .album,
@@ -379,29 +416,40 @@ body {
     width: 50px;
     margin-left: 12px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .player-album h3 {
     margin-left: 74px;
     margin-top: -42px;
+    cursor: pointer;
 }
 
 .player-album p {
     margin-left: 74px;
-    margin-top: 4px;
+    margin-top: 5px;
     color: #4a4d54;
+    cursor: pointer;
 }
 
 .player-album .text-2 {
     margin-left: 122px;
-    margin-top: -18px;
+    margin-top: -17px;
     color: #4a4d54;
+    cursor: pointer;
 }
 
 .fa-heart {
     color: #4a4d54;
     margin-left: 210px;
     line-height: 1px;
+}
+
+.fa-heart:hover,
+.fa-folder:hover {
+    color: #fff;
+    transition: .1s;
+    cursor: pointer;
 }
 
 .fa-folder {
@@ -419,22 +467,26 @@ body {
     font-size: 18px;
     margin-left: 318px;
     margin-top: 25px;
+    cursor: pointer;
 }
 
 .fa-step-backward,
 .fa-redo-alt {
     font-size: 18px;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .fa-play-circle {
     font-size: 35px;
     margin-left: 30px;
+    cursor: pointer;
 }
 
 .fa-step-forward {
     font-size: 18px;
     margin-left: 28px;
+    cursor: pointer;
 }
 
 .player-controller h6 {
@@ -449,6 +501,7 @@ body {
     border: 4px solid #535353;
     border-radius: 5px;
     margin-top: -9px;
+    cursor: pointer;
 }
 
 .player-controller .line-2 {
@@ -473,6 +526,7 @@ body {
 .fa-list-ul {
     font-size: 16px;
     margin-top: 40px;
+    cursor: pointer;
 }
 
 .fa-desktop,
@@ -480,6 +534,7 @@ body {
     font-size: 16px;
     margin-left: 20px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .player-audio .line-1 {
@@ -488,6 +543,7 @@ body {
     border: 4px solid #535353;
     border-radius: 5px;
     margin-top: -14px;
+    cursor: pointer;
 }
 
 .player-audio .line-2 {
@@ -496,5 +552,5 @@ body {
     border: 4px solid #bababa;
     border-radius: 5px;
     margin-top: -7px;
+    cursor: pointer;
 }
-
