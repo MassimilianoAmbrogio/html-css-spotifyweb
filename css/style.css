@@ -1,5 +1,4 @@
 /* GENERAL */
-
 * {
     margin: 0;
     padding: 0;
@@ -59,11 +58,14 @@ body {
     width: 30px;
     display: flex;
     margin-left: 22px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .logo-2 a {
-    margin-left: 70px;
+    display: block;
+    margin-top: -22px;
+    margin-left: 67px;
+    margin-bottom: 18px;
     color: #363636;
     text-decoration: none;
 }
@@ -76,7 +78,10 @@ body {
 }
 
 .logo-3 a {
+    display: block;
+    margin-top: -23px;
     margin-left: 70px;
+    margin-bottom: 40px;
     color: #363636;
     text-decoration: none;
 }
@@ -114,7 +119,9 @@ body {
 
 .sidebar-top .sub-title  {
     color: #363636; 
+    margin-top: -14px;
     margin-left: 65px;
+    margin-bottom: 40px;
     display: flex;
     align-items: flex-end;
     text-decoration: none;
@@ -453,7 +460,9 @@ body {
 }
 
 .fa-folder {
+    display: block;
     color: #4a4d54;
+    margin-top: -9px;
     margin-left: 250px;
     line-height: 1px;
 }
@@ -514,7 +523,7 @@ body {
 
 .player-controller .num-2 {
     color: #afafaf;
-    margin-left: 826px;
+    margin-left: 94.4%;
     margin-top: -9px;
 }
 
