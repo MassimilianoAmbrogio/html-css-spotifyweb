@@ -422,7 +422,7 @@ body {
 .player-album img {
     width: 50px;
     margin-left: 12px;
-    margin-top: 10px;
+    margin-top: 26px;
     cursor: pointer;
 }
 
@@ -447,8 +447,10 @@ body {
 }
 
 .fa-heart {
+    display: block;
     color: #4a4d54;
     margin-left: 210px;
+    margin-top: -26px;
     line-height: 1px;
 }
 
@@ -462,7 +464,6 @@ body {
 .fa-folder {
     display: block;
     color: #4a4d54;
-    margin-top: -9px;
     margin-left: 250px;
     line-height: 1px;
 }
